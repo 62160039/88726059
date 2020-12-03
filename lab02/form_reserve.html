@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Hotel Booking</title>
+</head>
+<body>
+ <h3>Hotel Booking</h3>
+<form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
+
+<table>    
+    <tr>
+        <td><label for="emotion">Room type</label></td>
+        <td><select name="roomtype">
+                <option value="0">Please select</option>
+                    <option value="Standard">Standard</option>
+                        <option value="Luxury">Luxury</option>
+                            <option value="Deluxe">Deluxe</option>
+                                </select></td>
+    </tr>
+
+    <tr>
+        <td><label for="emotion">Please select</label></td>
+        <td><select name="numguest">
+                <option value="0">--Select one--</option>
+                    <option value="1-2">1-2</option>
+                        <option value="3-4">3-4</option>
+                            <option value="5-6">5-6</option>
+                                <option value="7-8">7-8</option>
+                                </select></td>
+    </tr>
+    <td colspan="2">
+    <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" name="fame" id="name"></td>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" name="fame" id="name"></td>
+    </td></tr>
+
+        <tr>
+            <td><label for="choice">งานอดิเรก:</label></td>
+                <td><input type="checkbox" name="choice1" id="choice1" value="1">ดูหนัง
+                    <input type="checkbox" name="choice2" id="choice2" value="2">ฟังเพลง
+                        <input type="checkbox" name="choice3" id="choice3" value="3">เล่นเกม</td>
+        </tr>
+
+        <tr>
+            <td><label for="emotion">ความรู้สึกตอนนี้:</label></td>
+            <td><select name="emotion">
+                    <option value="0">--Select one--</option>
+                        <option value="1">Happy</option>
+                            <option value="2">Sad</option>
+                                <option value="3">Fun</option>
+                                    </select></td>
+        </tr>
+        <tr>
+            <td>ข้อเสนอแนะ:<br></td>
+            <td><Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <center> <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                </center>
+            </td>
+
+</table>
+
+ </form>
+</body>
+</html>
