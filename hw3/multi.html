@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <h1>2.โปรเเกรม สูตรคูณ-multi</h1>
+    <input type="text" id="txt" placeholder="สูตรคูณแม่ X" onkeyup="multi(this.value);">
+    
+        <table>
+            <td id="num1"></td>
+            <td id="num2"></td>
+        </table>
+        <script>
+            function multi(n){
+                num1 = document.getElementById('num1');
+                num1.innerHTML = "";
+                num2 = document.getElementById('num2');
+                num2.innerHTML = "";
+
+                for (i = 1; i <= 12; i++) {
+                    num1.innerHTML += n + "x" + i + "<br>";}
+
+                for (i=1;i<=12;i++){
+                    num2.innerHTML +="= "+(n*i) + "<br>";}}
+        </script>
+
+
+    </html>

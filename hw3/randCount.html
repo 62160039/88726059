@@ -4,30 +4,31 @@
     <head>
         <style>
             table, td {
-            border: 1px solid black;
+            border: 1px solid rgb(0, 170, 9);
             }
         </style>
     </head>
 
             <body>
+                
                 <h1>5.โปรแกรม สุ่มตัวเลข 0-99 - randCount</h1>
                 <input  type="text" id="num">
                 <button onclick="guess(num.value)">สุ่ม</button>
             
-                <table id="sh"></table>
+                <table id="xx"></table>
             </body>
         <script>
             function guess(n){
                 
-                while(sh.hasChildNodes())
-                {sh.removeChild(sh.firstChild);}
+                while(xx.hasChildNodes())
+                {xx.removeChild(xx.firstChild);}
 
                 var rn = [n];
                 for(o=0; o<Number(n);o++){rn[o] = Number(Math.floor(Math.random() * 100))}
 
                 rn = rn.sort(function(a, b){return b - a});
 
-                var table = document.getElementById("sh");
+                var table = document.getElementById("xx");
 
                 var rn2=rn;
 

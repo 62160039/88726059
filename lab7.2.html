@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+        }
+    </style>
+    <script>
+        function call(){
+            var n1 =document.getElementById("n1");
+            var n2 =document.getElementById("n2");
+            var opp =document.getElementById("op");
+            console.log(opp.value);
+            switch(opp.value){
+                case "1":
+                    n3.value = parseInt(n1.value)+parseInt(n2.value);
+                    break;
+                case "2":
+                    n3.value = parseInt(n1.value)-parseInt(n2.value);
+                    break;
+                case "3":
+                    n3.value = parseInt(n1.value)*parseInt(n2.value);
+                    break;
+                case "4":
+                    n3.value = parseInt(n1.value)/parseInt(n2.value);
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="n1">
+        <select name="operation" id="op">
+            <option value="1">+</option>
+            <option value="2">-</option>
+            <option value="3">*</option>
+            <option value="4">/</option>
+        </select>
+
+        <input type="text" id="n2">
+        <span>=</span>
+        <input type="text" id="n3">
+        <input type="button" value="Compute" onclick="call()">
+    </form>
+</body>
+</html>

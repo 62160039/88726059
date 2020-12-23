@@ -1,0 +1,15 @@
+<!doctype html>
+<head> 1. โปรแกรม ทักทาย </head>
+ 
+<script> 
+    function hello(){
+    var x = document.getElementById("name").value;
+    document.getElementById("show").innerHTML = "Hello " + x;}
+</script>
+
+<body>
+    <input type="text" placeholder="Input your name" id="name" oninput="hello()">   
+    <p id="show"></p>
+</body>
+ 
+</html>
